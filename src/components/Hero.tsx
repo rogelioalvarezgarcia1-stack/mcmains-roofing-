@@ -18,8 +18,12 @@ export default function Hero() {
         <div className="mb-6">
           <div className="inline-flex items-center space-x-2 bg-gray-900 border border-gray-700 rounded-full px-5 py-3">
             <div className="flex items-center space-x-1">
-              <div className="w-5 h-5 rounded-full border-2 border-white flex items-center justify-center">
-                <div className="w-2 h-2 rounded-full bg-white" />
+              <div className="w-5 h-5 rounded-full border-2 border-white flex items-center justify-center overflow-hidden bg-white">
+                <img
+                  src="https://static.wixstatic.com/media/e1b2a4_b9d7f524e686408ca3d34e313eb33a90~mv2.png"
+                  alt="Google"
+                  className="w-3 h-3 object-contain"
+                />
               </div>
               <span className="text-white text-sm font-bold">70+ REVIEWS ON</span>
             </div>
