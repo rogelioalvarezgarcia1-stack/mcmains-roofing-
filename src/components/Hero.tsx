@@ -30,7 +30,7 @@ export default function Hero() {
             <img
               src="https://static.wixstatic.com/media/e1b2a4_2ff935bd7bdb4576b0da8a5713840fa7~mv2.png"
               alt="Google"
-              className="h-5"
+              className="h-[14px]"
             />
           </div>
         </div>
