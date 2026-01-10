@@ -61,18 +61,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1200 120" className="w-full h-24 fill-white">
-          <path d="M0,0 Q300,80 600,60 T1200,20 L1200,120 L0,120 Z" />
-        </svg>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-32 h-32">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <path d="M50,10 L20,40 L20,90 L45,90 L45,65 L55,65 L55,90 L80,90 L80,40 Z" fill="#00BCD4" />
-            <rect x="30" y="50" width="8" height="8" fill="#FFC107" />
-            <rect x="62" y="50" width="8" height="8" fill="#FFC107" />
-          </svg>
-        </div>
-      </div>
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
     </section>
   );
 }
