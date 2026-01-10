@@ -15,17 +15,17 @@ export default function LeadForm() {
   };
 
   return (
-    <section id="estimate" className="py-16 px-4 bg-gradient-to-br from-gray-800 to-gray-900">
+    <section id="estimate" className="py-16 px-4 bg-[#F5F5F5]">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="text-white">
+          <div className="text-black">
             <h2 className="text-4xl font-bold mb-4">
               Sign Up Today For A Thorough Estimate.
             </h2>
-            <p className="text-xl text-cyan-500 font-semibold mb-6">
+            <p className="text-xl text-[#D4AF37] font-semibold mb-6">
               No Strings Attached.
             </p>
-            <p className="text-lg opacity-90">
+            <p className="text-lg text-[#5C5C5C]">
               Get in touch with one of our professional roofers who will help with your home inspection needs.
             </p>
           </div>
@@ -38,7 +38,7 @@ export default function LeadForm() {
                   placeholder="Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
                   required
                 />
               </div>
@@ -48,7 +48,7 @@ export default function LeadForm() {
                   placeholder="Best Number"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
                   required
                 />
               </div>
@@ -58,7 +58,7 @@ export default function LeadForm() {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
                   required
                 />
               </div>
@@ -68,7 +68,7 @@ export default function LeadForm() {
                   placeholder="Address"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
                   required
                 />
               </div>
@@ -82,7 +82,7 @@ export default function LeadForm() {
 
               <button
                 type="submit"
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 py-4 rounded-lg font-bold text-lg transition-colors"
+                className="w-full bg-[#D4AF37] hover:bg-[#C49B2E] text-black py-4 rounded-lg font-bold text-lg transition-colors"
               >
                 SUBMIT NOW
               </button>

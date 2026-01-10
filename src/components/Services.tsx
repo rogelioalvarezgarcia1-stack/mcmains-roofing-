@@ -30,10 +30,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center space-x-3 mb-12">
-          <div className="w-1 h-12 bg-cyan-500" />
+          <div className="w-1 h-12 bg-[#D4AF37]" />
           <h2 className="text-4xl font-bold">OUR ROOFING AND RESTORATION SERVICES</h2>
         </div>
 
@@ -49,14 +49,14 @@ export default function Services() {
                   alt={service.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-cyan-500 to-yellow-500" />
+                <div className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-[#D4AF37] to-[#C49B2E]" />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <a
                   href="#estimate"
-                  className="inline-flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg transition-colors w-fit font-semibold"
+                  className="inline-flex items-center space-x-2 bg-[#D4AF37] hover:bg-[#C49B2E] text-black px-6 py-2 rounded-lg transition-colors w-fit font-semibold"
                 >
                   <span>LEARN MORE</span>
                   <ArrowRight size={18} />
