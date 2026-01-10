@@ -27,7 +27,11 @@ export default function Hero() {
               </div>
               <span className="text-white text-sm font-bold">70+ REVIEWS ON</span>
             </div>
-            <span className="text-white text-sm font-bold">Google</span>
+            <img
+              src="https://static.wixstatic.com/media/e1b2a4_2ff935bd7bdb4576b0da8a5713840fa7~mv2.png"
+              alt="Google"
+              className="h-4"
+            />
           </div>
         </div>
 
