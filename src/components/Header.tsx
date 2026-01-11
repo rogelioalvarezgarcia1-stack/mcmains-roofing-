@@ -17,7 +17,7 @@ export default function Header() {
         </div>
         <a
           href="tel:2538451234"
-          className="bg-[#D4AF37] hover:bg-[#C49B2E] text-black px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors font-semibold"
+          className="bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors font-semibold"
         >
           <Phone size={18} />
           <span>(253) 845-1234</span>

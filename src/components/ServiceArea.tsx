@@ -21,7 +21,7 @@ const areas = [
 
 export default function ServiceArea() {
   return (
-    <section className="py-20 px-4 bg-[#F5F5F5]">
+    <section className="py-20 px-4 bg-[#F8F9FA]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
@@ -36,7 +36,7 @@ export default function ServiceArea() {
 
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-1 h-12 bg-[#D4AF37]" />
+              <div className="w-1 h-12 bg-[#F1C40F]" />
               <h2 className="text-4xl font-bold">OUR SERVICE AREA</h2>
             </div>
 
@@ -52,15 +52,15 @@ export default function ServiceArea() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               {areas.map((area, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <CheckCircle className="text-[#D4AF37] flex-shrink-0" size={20} />
+                  <CheckCircle className="text-[#F1C40F] flex-shrink-0" size={20} />
                   <span className="text-gray-700">{area}</span>
                 </div>
               ))}
             </div>
 
-            <div className="bg-black text-white p-6 rounded-lg">
+            <div className="bg-[#0B0B0C] text-white p-6 rounded-lg">
               <div className="flex items-start space-x-3">
-                <MapPin className="text-[#D4AF37] flex-shrink-0 mt-1" size={24} />
+                <MapPin className="text-[#F1C40F] flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-bold text-lg mb-2">AND MANY MORE!</h3>
                   <p className="text-sm opacity-90">

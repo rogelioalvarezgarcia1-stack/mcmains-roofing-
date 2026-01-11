@@ -30,15 +30,15 @@ export default function WhyChooseUs() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center space-x-3 mb-8">
-              <div className="w-1 h-12 bg-[#D4AF37]" />
+              <div className="w-1 h-12 bg-[#F1C40F]" />
               <h2 className="text-4xl font-bold">WHY CHOOSE MCMAINS ROOFING</h2>
             </div>
 
             <div className="space-y-8">
               {reasons.map((reason, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#F5F5F5] rounded-lg flex items-center justify-center">
-                    <reason.icon className="text-[#D4AF37]" size={24} />
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#F8F9FA] rounded-lg flex items-center justify-center">
+                    <reason.icon className="text-[#F1C40F]" size={24} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">{reason.title}</h3>
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#C49B2E] rounded-lg transform rotate-3" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#F1C40F] to-[#D4A017] rounded-lg transform rotate-3" />
             <img
               src="https://images.pexels.com/photos/7031845/pexels-photo-7031845.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="McMains Roofing professional"

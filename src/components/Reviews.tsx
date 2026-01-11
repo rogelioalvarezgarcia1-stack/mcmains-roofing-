@@ -100,7 +100,7 @@ export default function Reviews() {
                 >
                   <div className="flex space-x-1 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} size={20} fill="#D4AF37" color="#D4AF37" />
+                      <Star key={i} size={20} fill="#F1C40F" color="#F1C40F" />
                     ))}
                   </div>
                   <p className="text-gray-700 mb-4 text-sm leading-relaxed">{review.text}</p>
@@ -118,7 +118,7 @@ export default function Reviews() {
             href="https://www.google.com/search?q=mcmains+roofing"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#D4AF37] hover:bg-[#C49B2E] text-black px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+            className="inline-block bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-8 py-4 rounded-lg font-bold text-lg transition-colors"
           >
             WRITE US A REVIEW
           </a>

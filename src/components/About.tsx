@@ -30,7 +30,7 @@ export default function About() {
 
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-1 h-12 bg-[#D4AF37]" />
+              <div className="w-1 h-12 bg-[#F1C40F]" />
               <h2 className="text-4xl font-bold">ABOUT MCMAINS ROOFING</h2>
             </div>
 
@@ -47,12 +47,12 @@ export default function About() {
               honest assessment of your roof, and provide straightforward recommendations that serve your best interests.
             </p>
 
-            <div className="bg-[#F5F5F5] border-l-4 border-[#D4AF37] p-6 mb-6">
+            <div className="bg-[#F8F9FA] border-l-4 border-[#F1C40F] p-6 mb-6">
               <div className="flex items-center space-x-3 mb-2">
-                <Award className="text-[#D4AF37]" size={32} />
+                <Award className="text-[#F1C40F]" size={32} />
                 <h3 className="text-2xl font-bold">FINANCING IS AVAILABLE!</h3>
               </div>
-              <a href="#estimate" className="text-[#D4AF37] font-semibold hover:text-[#C49B2E]">
+              <a href="#estimate" className="text-[#F1C40F] font-semibold hover:text-[#D4A017]">
                 Learn more →
               </a>
             </div>
