@@ -14,12 +14,12 @@ const services = [
   {
     title: 'STORM RESTORATION',
     description: "After a big storm, especially when hail, wind or fallen trees hit your roof, our team can help restore it quickly.",
-    image: 'https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://static.wixstatic.com/media/e1b2a4_1f126691a2eb47fb8803b1c5ce0bd753~mv2.jpeg',
   },
   {
     title: 'COMMERCIAL',
     description: "We don't only work in residential capacity. We also perform roofing services for a variety of commercial clients.",
-    image: 'https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://static.wixstatic.com/media/e1b2a4_fdfc6a86f1e74dc09ef71290241d89cc~mv2.jpeg',
   },
   {
     title: 'ALL SERVICES',
