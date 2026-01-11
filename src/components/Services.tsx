@@ -4,12 +4,12 @@ const services = [
   {
     title: 'ROOF REPLACEMENT',
     description: "When your roof is beyond repair or it's time for an upgrade, we'll replace it efficiently and affordably.",
-    image: 'https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://static.wixstatic.com/media/e1b2a4_26df948372c4416c981a3267b1410091~mv2.jpeg',
   },
   {
     title: 'ROOF REPAIR',
     description: "Our team is able to fix anything from minor damage to structural repairs on your roof with care and expertise.",
-    image: 'https://images.pexels.com/photos/8961050/pexels-photo-8961050.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://static.wixstatic.com/media/e1b2a4_d719adaee9364335bc12f912e99f0451~mv2.jpeg',
   },
   {
     title: 'STORM RESTORATION',
