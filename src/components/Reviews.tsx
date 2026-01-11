@@ -27,7 +27,7 @@ const styles = `
   .carousel-track {
     display: flex;
     gap: 24px;
-    animation: slideLeft 25s linear infinite;
+    animation: slideLeft 20s linear infinite;
   }
 
   .carousel-track:hover {
