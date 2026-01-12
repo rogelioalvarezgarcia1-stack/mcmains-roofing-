@@ -1,4 +1,5 @@
 import { Phone, Calendar } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -15,7 +16,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[#0A0F29] opacity-40" />
 
       <div className="relative max-w-7xl mx-auto px-4 py-32 w-full">
-        <div className="mb-8">
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: -30, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <a
             href="https://www.google.com/search?sca_esv=b54de5dcee8cb050&rlz=1C1RXQR_enUS1189US1189&biw=1536&bih=730&aic=0&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTH9GrBOw3UglFGl8hsEofaUmjyc4T_IoCF52auG-N2kkxRNYgxdidz2OXjVjSgjSgte9Ntbn-mNprNPmBUzOd1fGy9y_aKkaLdobzLBl6j6PDsf8A%3D%3D&q=McMains+Roofing+Inc+Reviews&sa=X&ved=2ahUKEwjC5s-YwYSSAxXfFzQIHXF2IPIQ0bkNegQINRAE"
             target="_blank"
@@ -39,32 +45,102 @@ export default function Hero() {
             </div>
             <p className="text-white text-sm opacity-90">Based on 70+ Google Reviews</p>
           </a>
-        </div>
+        </motion.div>
 
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-          ROOFING DONE ONCE.<br />BACKED FOR 25 YEARS.
-        </h1>
+        <motion.h1
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
+          initial={{ opacity: 0, scale: 0.8, y: 30 }}
+          animate={{
+            opacity: 1,
+            scale: [0.8, 1.05, 1],
+            y: 0,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.4,
+            type: "spring",
+            bounce: 0.5
+          }}
+        >
+          <motion.span
+            className="inline-block"
+            animate={{
+              textShadow: [
+                "0 0 20px rgba(241, 196, 15, 0.3)",
+                "0 0 40px rgba(241, 196, 15, 0.6)",
+                "0 0 20px rgba(241, 196, 15, 0.3)",
+              ],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            ROOFING DONE ONCE.
+          </motion.span>
+          <br />
+          <motion.span
+            className="inline-block"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              textShadow: [
+                "0 0 20px rgba(241, 196, 15, 0.3)",
+                "0 0 40px rgba(241, 196, 15, 0.6)",
+                "0 0 20px rgba(241, 196, 15, 0.3)",
+              ],
+            }}
+            transition={{
+              x: { duration: 0.6, delay: 0.8, type: "spring" },
+              opacity: { duration: 0.6, delay: 0.8 },
+              textShadow: {
+                duration: 2,
+                delay: 0.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }
+            }}
+          >
+            BACKED FOR 25 YEARS.
+          </motion.span>
+        </motion.h1>
 
-        <p className="text-xl md:text-2xl text-white mb-8 font-light">
+        <motion.p
+          className="text-xl md:text-2xl text-white mb-8 font-light"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 }}
+        >
           Puyallup's Trusted Roofers — One of Washington's Longest Workmanship Warranties Since 1996
-        </p>
+        </motion.p>
 
-        <div className="flex flex-wrap gap-4">
-          <a
+        <motion.div
+          className="flex flex-wrap gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+        >
+          <motion.a
             href="tel:2538451244"
             className="bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-8 py-4 rounded-lg flex items-center space-x-2 transition-colors font-semibold text-lg"
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Phone size={20} />
             <span>(253) 845-1244</span>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="#estimate"
             className="bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-8 py-4 rounded-lg flex items-center space-x-2 transition-colors font-semibold text-lg"
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Calendar size={20} />
             <span>SCHEDULE NOW</span>
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent to-[#F8F9FA] pointer-events-none"></div>

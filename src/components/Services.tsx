@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const services = [
   {
@@ -44,30 +45,68 @@ export default function Services() {
 
         <div className="space-y-6">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow flex flex-col md:flex-row"
+              initial={{ opacity: 0, y: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.15, type: "spring", stiffness: 100 }}
+              whileHover={{ scale: 1.02, x: 10 }}
             >
-              <div className="relative md:w-64 h-48 md:h-auto">
+              <motion.div
+                className="relative md:w-64 h-48 md:h-auto overflow-hidden"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-[#F1C40F] to-[#D4A017]" />
-              </div>
+                <motion.div
+                  className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-[#F1C40F] to-[#D4A017]"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.15 + 0.3 }}
+                  style={{ transformOrigin: "left" }}
+                />
+              </motion.div>
               <div className="p-8 flex-1 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <a
+                <motion.h3
+                  className="text-2xl font-bold mb-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.15 + 0.2 }}
+                >
+                  {service.title}
+                </motion.h3>
+                <motion.p
+                  className="text-gray-600 mb-4"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.15 + 0.3 }}
+                >
+                  {service.description}
+                </motion.p>
+                <motion.a
                   href="#estimate"
                   className="inline-flex items-center space-x-2 bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-6 py-2 rounded-lg transition-colors w-fit font-semibold"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.15 + 0.4, type: "spring" }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <span>LEARN MORE</span>
                   <ArrowRight size={18} />
-                </a>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
