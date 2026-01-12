@@ -7,23 +7,23 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://images.pexels.com/photos/8961186/pexels-photo-8961186.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Roofing work"
+              src="https://static.wixstatic.com/media/e1b2a4_d0f6c949e837428e8a0fe7501eef4530~mv2.jpg"
+              alt="McMains Roofing work 1"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
             />
             <img
-              src="https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Roof inspection"
+              src="https://static.wixstatic.com/media/e1b2a4_db5d1b96b2ed4cae820f55bece8d0ad9~mv2.jpg"
+              alt="McMains Roofing work 2"
               className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
             />
             <img
-              src="https://images.pexels.com/photos/8960464/pexels-photo-8960464.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Completed roof"
+              src="https://static.wixstatic.com/media/e1b2a4_644839af7f744c3da35c4c4d7b772ebe~mv2.jpg"
+              alt="McMains Roofing work 3"
               className="rounded-lg shadow-lg w-full h-64 object-cover -mt-8"
             />
             <img
-              src="https://images.pexels.com/photos/7031604/pexels-photo-7031604.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Roofing team"
+              src="https://static.wixstatic.com/media/e1b2a4_1d91947f2e944b18996dd1ab12b449ee~mv2.jpg"
+              alt="McMains Roofing work 4"
               className="rounded-lg shadow-lg w-full h-64 object-cover"
             />
           </div>
@@ -34,17 +34,15 @@ export default function About() {
               <h2 className="text-4xl font-bold">ABOUT MCMAINS ROOFING</h2>
             </div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              When you're looking for a trusted roofing company in Puyallup, look no further than McMains Roofing.
-              For over a quarter-century, we've been Pierce County's go-to roofing experts. We're known for our
-              excellence in residential and commercial roofing services, and we're ready to provide the straight
-              answers and quality workmanship your property deserves.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              At McMains Roofing, we pride ourselves on quality craftsmanship and a wide range of roofing solutions.
+              We've been serving the Puyallup area and surrounding Pierce County communities since 1996 — with a mission
+              to protect homes like yours using trusted materials and experienced installers.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              At McMains Roofing, we pride ourselves on quality craftsmanship and a high degree of professionalism.
-              We don't play games with pricing or make false promises. We show up when we say we will, give an
-              honest assessment of your roof, and provide straightforward recommendations that serve your best interests.
+              We proudly partner with local suppliers and hire only local crews, keeping jobs and materials in Washington.
+              No out-of-state subs, no shortcuts — just honest work by people who live under the same skies.
             </p>
 
             <div className="bg-[#F8F9FA] border-l-4 border-[#F1C40F] p-6 mb-6">

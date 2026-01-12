@@ -12,11 +12,11 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-bold">McMains Roofing</div>
-                <div className="text-xs opacity-75">Est. 1995</div>
+                <div className="text-xs opacity-75">Est. 1996</div>
               </div>
             </div>
             <p className="text-sm text-[#B0B0B0] leading-relaxed">
-              Trusted roofing contractor serving Puyallup and Pierce County since 1995.
+              Trusted roofing contractor serving Puyallup and Pierce County since 1996.
             </p>
           </div>
 
@@ -24,7 +24,7 @@ export default function Footer() {
             <h3 className="font-bold mb-4 text-lg">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#home" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Home
                 </a>
               </li>
@@ -34,12 +34,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#about" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#reviews" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Reviews
                 </a>
               </li>
@@ -50,27 +50,27 @@ export default function Footer() {
             <h3 className="font-bold mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Roof Replacement
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Roof Repair
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Storm Restoration
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Commercial Roofing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Gutter Installation
                 </a>
               </li>
@@ -82,8 +82,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="text-[#F1C40F]" />
-                <a href="tel:2538451234" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
-                  (253) 845-1234
+                <a href="tel:2538451244" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                  (253) 845-1244
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -103,14 +103,23 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-sm text-[#B0B0B0]">
-          <p>Copyright © {new Date().getFullYear()} McMains Roofing. All Rights Reserved.</p>
-          <div className="mt-2 space-x-4">
-            <a href="#" className="hover:text-[#F1C40F] transition-colors">
+        <div className="border-t border-gray-800 pt-8 text-center">
+          <div className="bg-gradient-to-r from-[#F1C40F]/10 to-transparent rounded-lg p-6 mb-6">
+            <p className="text-white text-lg font-semibold mb-2">
+              Know someone who needs a roof? Refer a friend and get <span className="text-[#F1C40F]">$250</span> when they book with us.
+            </p>
+            <p className="text-white text-base">
+              Plus — <span className="text-[#F1C40F] font-semibold">5% Off for All Veterans & Seniors</span>.
+            </p>
+          </div>
+
+          <p className="text-sm text-[#B0B0B0]">Copyright © {new Date().getFullYear()} McMains Roofing. All Rights Reserved.</p>
+          <div className="mt-2 space-x-4 text-sm">
+            <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
               Privacy Policy
             </a>
-            <span>|</span>
-            <a href="#" className="hover:text-[#F1C40F] transition-colors">
+            <span className="text-[#B0B0B0]">|</span>
+            <a href="#" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
               Terms of Service
             </a>
           </div>

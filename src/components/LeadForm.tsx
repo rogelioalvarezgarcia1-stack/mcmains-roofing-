@@ -20,13 +20,13 @@ export default function LeadForm() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-[#0B0B0C]">
             <h2 className="text-4xl font-bold mb-4">
-              Sign Up Today For A Thorough Estimate.
+              Sign Up for a No-Pressure Estimate — And Learn How We Protect Your Roof for 25 Years
             </h2>
-            <p className="text-xl text-[#F1C40F] font-semibold mb-6">
-              No Strings Attached.
+            <p className="text-lg text-[#2D2D2F] mb-6">
+              Get a local expert out to your home — our professional roofers will help you with a free inspection and honest recommendations.
             </p>
-            <p className="text-lg text-[#B0B0B0]">
-              Get in touch with one of our professional roofers who will help with your home inspection needs.
+            <p className="text-base text-[#F1C40F] font-semibold">
+              Ask about our $250 Referral Bonus & 5% Discount for Veterans & Seniors
             </p>
           </div>
 

@@ -24,7 +24,7 @@ const services = [
   {
     title: 'ALL SERVICES',
     description: "Our company uses a range of roofing materials including asphalt, metal, and TPO. We also provide gutter installation.",
-    image: 'https://images.pexels.com/photos/8960453/pexels-photo-8960453.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://static.wixstatic.com/media/e1b2a4_d4c34072ec7842ae8807372af50af0ce~mv2.jpg',
   },
 ];
 
@@ -32,9 +32,14 @@ export default function Services() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center space-x-3 mb-12">
-          <div className="w-1 h-12 bg-[#F1C40F]" />
-          <h2 className="text-4xl font-bold">OUR ROOFING AND RESTORATION SERVICES</h2>
+        <div className="mb-12">
+          <div className="flex items-center space-x-3 mb-4">
+            <div className="w-1 h-12 bg-[#F1C40F]" />
+            <h2 className="text-4xl font-bold">OUR ROOFING AND RESTORATION SERVICES</h2>
+          </div>
+          <p className="text-lg text-gray-700">
+            Ask about our <span className="font-bold text-[#F1C40F]">25-Year Workmanship Warranty</span> — included with every residential roof replacement.
+          </p>
         </div>
 
         <div className="space-y-6">

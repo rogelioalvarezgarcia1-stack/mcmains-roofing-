@@ -11,11 +11,11 @@ export default function ContactCTA() {
             </h2>
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:2538451234"
+                href="tel:2538451244"
                 className="bg-[#F1C40F] hover:bg-[#2D2D2F] text-[#0B0B0C] hover:text-[#F1C40F] px-8 py-4 rounded-lg flex items-center space-x-2 transition-colors font-semibold text-lg"
               >
                 <Phone size={20} />
-                <span>(253) 845-1234</span>
+                <span>(253) 845-1244</span>
               </a>
               <a
                 href="#estimate"
@@ -29,9 +29,9 @@ export default function ContactCTA() {
 
           <div className="rounded-lg overflow-hidden shadow-2xl">
             <img
-              src="https://images.pexels.com/photos/8961186/pexels-photo-8961186.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://static.wixstatic.com/media/e1b2a4_e0bb29d6c6c0460d868a311a250c180d~mv2.jpg"
               alt="McMains Roofing work truck"
-              className="w-full h-80 object-cover"
+              className="w-full h-80 object-cover scale-110"
             />
           </div>
         </div>

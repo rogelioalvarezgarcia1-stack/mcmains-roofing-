@@ -25,13 +25,29 @@ export default function ServiceArea() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Puyallup and Pierce County map"
-                className="w-full h-full object-cover opacity-70"
-              />
-            </div>
+            <a
+              href="https://share.google/YJkPsC5CWnbBN3cwg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-200 rounded-lg h-96 overflow-hidden relative cursor-pointer hover:opacity-95 transition-opacity"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172204.58634847876!2d-122.43843984912108!3d47.15299890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549057f15e0d4f45%3A0x7c2e3a67d088c9d!2sMcMains%20Roofing!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, pointerEvents: 'none' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="McMains Roofing Location"
+              ></iframe>
+              <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <div className="absolute w-[420px] h-[420px] border-[3px] border-red-600 rounded-full opacity-50"></div>
+                  <div className="absolute w-[420px] h-[420px] bg-red-600 rounded-full opacity-5"></div>
+                </div>
+              </div>
+            </a>
           </div>
 
           <div>
