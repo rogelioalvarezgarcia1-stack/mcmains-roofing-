@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#0B0B0C] min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative bg-[#0B0B0C] min-h-screen flex items-center overflow-hidden">
       <video
         autoPlay
         muted
@@ -113,7 +113,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          Puyallup's Trusted Roofers — One of Washington's Longest Workmanship Warranties Since 1996
+          Puyallup's Trusted Roofers with One of Washington's Longest Workmanship Warranties Since 1996
         </motion.p>
 
         <motion.div

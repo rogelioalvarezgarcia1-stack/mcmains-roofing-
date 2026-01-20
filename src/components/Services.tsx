@@ -3,26 +3,31 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
+    id: 'roof-replacement',
     title: 'ROOF REPLACEMENT',
     description: "When your roof is beyond repair or it's time for an upgrade, we'll replace it efficiently and affordably.",
     image: 'https://static.wixstatic.com/media/e1b2a4_26df948372c4416c981a3267b1410091~mv2.jpeg',
   },
   {
+    id: 'roof-repair',
     title: 'ROOF REPAIR',
     description: "Our team is able to fix anything from minor damage to structural repairs on your roof with care and expertise.",
     image: 'https://static.wixstatic.com/media/e1b2a4_d719adaee9364335bc12f912e99f0451~mv2.jpeg',
   },
   {
+    id: 'storm-restoration',
     title: 'STORM RESTORATION',
     description: "After a big storm, especially when hail, wind or fallen trees hit your roof, our team can help restore it quickly.",
     image: 'https://static.wixstatic.com/media/e1b2a4_1f126691a2eb47fb8803b1c5ce0bd753~mv2.jpeg',
   },
   {
+    id: 'commercial-roofing',
     title: 'COMMERCIAL',
     description: "We don't only work in residential capacity. We also perform roofing services for a variety of commercial clients.",
     image: 'https://static.wixstatic.com/media/e1b2a4_fdfc6a86f1e74dc09ef71290241d89cc~mv2.jpeg',
   },
   {
+    id: 'gutter-installation',
     title: 'ALL SERVICES',
     description: "Our company uses a range of roofing materials including asphalt, metal, and TPO. We also provide gutter installation.",
     image: 'https://static.wixstatic.com/media/e1b2a4_d4c34072ec7842ae8807372af50af0ce~mv2.jpg',
@@ -31,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="services" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <div className="flex items-center space-x-3 mb-4">
@@ -39,7 +44,7 @@ export default function Services() {
             <h2 className="text-4xl font-bold">OUR ROOFING AND RESTORATION SERVICES</h2>
           </div>
           <p className="text-lg text-gray-700">
-            Ask about our <span className="font-bold text-[#F1C40F]">25-Year Workmanship Warranty</span> — included with every residential roof replacement.
+            Ask about our <span className="font-bold text-[#F1C40F]">25-Year Workmanship Warranty</span>, included with every residential roof replacement.
           </p>
         </div>
 
@@ -47,6 +52,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={index}
+              id={service.id}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow flex flex-col md:flex-row"
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}

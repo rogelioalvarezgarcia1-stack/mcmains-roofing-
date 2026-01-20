@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
@@ -80,7 +80,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               At McMains Roofing, we pride ourselves on quality craftsmanship and a wide range of roofing solutions.
-              We've been serving the Puyallup area and surrounding Pierce County communities since 1996 — with a mission
+              We've been serving the Puyallup area and surrounding Pierce County communities since 1996 with a mission
               to protect homes like yours using trusted materials and experienced installers.
             </motion.p>
 
@@ -92,7 +92,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               We proudly partner with local suppliers and hire only local crews, keeping jobs and materials in Washington.
-              No out-of-state subs, no shortcuts — just honest work by people who live under the same skies.
+              No out-of-state subs, no shortcuts, just honest work by people who live under the same skies.
             </motion.p>
 
             <motion.div

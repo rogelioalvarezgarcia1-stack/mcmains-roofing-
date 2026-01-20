@@ -1,18 +1,6 @@
 import { Shield } from 'lucide-react';
-import { FormEvent, useState } from 'react';
 
 export default function LeadForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    address: '',
-  });
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <section id="estimate" className="py-16 px-4 bg-[#F8F9FA]">
@@ -20,10 +8,10 @@ export default function LeadForm() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-[#0B0B0C]">
             <h2 className="text-4xl font-bold mb-4">
-              Sign Up for a No-Pressure Estimate — And Learn How We Protect Your Roof for 25 Years
+              Sign Up for a No-Pressure Estimate and Learn How We Protect Your Roof for 25 Years
             </h2>
             <p className="text-lg text-[#2D2D2F] mb-6">
-              Get a local expert out to your home — our professional roofers will help you with a free inspection and honest recommendations.
+              Get a local expert out to your home. Our professional roofers will help you with a free inspection and honest recommendations.
             </p>
             <p className="text-base text-[#F1C40F] font-semibold">
               Ask about our $250 Referral Bonus & 5% Discount for Veterans & Seniors
@@ -31,13 +19,12 @@ export default function LeadForm() {
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-2xl">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action="https://formspree.io/f/xojjnryd" method="POST" className="space-y-4">
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F1C40F]"
                   required
                 />
@@ -45,9 +32,8 @@ export default function LeadForm() {
               <div>
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Best Number"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F1C40F]"
                   required
                 />
@@ -55,9 +41,8 @@ export default function LeadForm() {
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F1C40F]"
                   required
                 />
@@ -65,9 +50,8 @@ export default function LeadForm() {
               <div>
                 <input
                   type="text"
+                  name="address"
                   placeholder="Address"
-                  value={formData.address}
-                  onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F1C40F]"
                   required
                 />

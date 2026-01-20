@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Users,
     title: 'Local Products & Crews',
-    description: '100% Washington-sourced and installed — no subcontractors.',
+    description: '100% Washington-sourced and installed, no subcontractors.',
   },
   {
     icon: DollarSign,

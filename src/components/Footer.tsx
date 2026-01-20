@@ -4,18 +4,20 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B0B0C] text-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <div className="text-lg font-bold text-gray-800">M</div>
-              </div>
-              <div>
-                <div className="font-bold">McMains Roofing</div>
-                <div className="text-xs opacity-75">Est. 1996</div>
+            <div className="flex items-center space-x-3 mb-6">
+              <img
+                src="https://static.wixstatic.com/media/e1b2a4_f4a320fec94a4f97aa9c048c904b1c3d~mv2.png"
+                alt="McMains Roofing Logo"
+                className="h-16 w-auto"
+              />
+              <div className="border-l border-gray-700 pl-3">
+                <div className="font-bold text-lg">McMains Roofing</div>
+                <div className="text-sm text-gray-400">Est. 1996</div>
               </div>
             </div>
-            <p className="text-sm text-[#B0B0B0] leading-relaxed">
+            <p className="text-sm text-gray-400 leading-relaxed">
               Trusted roofing contractor serving Puyallup and Pierce County since 1996.
             </p>
           </div>
@@ -50,28 +52,28 @@ export default function Footer() {
             <h3 className="font-bold mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#roof-replacement" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Roof Replacement
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#roof-repair" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Roof Repair
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#storm-restoration" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Storm Restoration
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                <a href="#commercial-roofing" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
                   Commercial Roofing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
-                  Gutter Installation
+                <a href="#gutter-installation" className="text-[#B0B0B0] hover:text-[#F1C40F] transition-colors">
+                  Additional Services
                 </a>
               </li>
             </ul>
@@ -109,7 +111,7 @@ export default function Footer() {
               Know someone who needs a roof? Refer a friend and get <span className="text-[#F1C40F]">$250</span> when they book with us.
             </p>
             <p className="text-white text-base">
-              Plus — <span className="text-[#F1C40F] font-semibold">5% Off for All Veterans & Seniors</span>.
+              Plus <span className="text-[#F1C40F] font-semibold">5% Off for All Veterans & Seniors</span>.
             </p>
           </div>
 
